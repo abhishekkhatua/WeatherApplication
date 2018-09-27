@@ -18,7 +18,7 @@ public class CurrentData {
     private int cnt;
     @Expose
     @SerializedName("message")
-    private double message;
+    public double message;
     @Expose
     @SerializedName("cod")
     public String cod;
@@ -29,7 +29,7 @@ public class CurrentData {
         public int population;
         @Expose
         @SerializedName("country")
-        private String country;
+        public String country;
         @Expose
         @SerializedName("coord")
         private Coord coord;
