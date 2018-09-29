@@ -29,22 +29,15 @@ class MainActivity : AppCompatActivity() {
             override fun onFailure(call: Call<CurrentData>, t: Throwable) {
                 Log.i("Failure", t.message)
             }
-
             override fun onResponse(call: Call<CurrentData>, response: Response<CurrentData>) {
-
-
                 var currentData: CurrentData = response.body()!!
-
                 Log.i("GetCurrentData", currentData.city.population.toString())
                 var weatherData = WeatherData(currentData)
                 Log.i("WeatherData",weatherData.getMyName() )
-
                 temperature!!.text = weatherData.getTemp()
                 country!!.text     = weatherData.cityName
             }
-
         })
-
     }
 }
 
