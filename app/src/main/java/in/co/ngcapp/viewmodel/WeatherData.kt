@@ -5,30 +5,25 @@ import android.databinding.BaseObservable
 
 class WeatherData :BaseObservable {
      var cityName:String ?= null
-     var temperature :String?= null
-
-
-
-
+     var temperature:String?= null
     constructor( currentData: CurrentData){
-         this.cityName = currentData.city.country
+         this.cityName = currentData.city.name
          this.temperature = currentData.message.toString()
-
      }
-
      fun getMyName(): String {
-         //include validation, logic, logging or whatever you like here
+         //get city name
          return this.cityName!!
      }
      fun setMyName(value:String){
+         //set city name
          this.cityName = value
      }
-
      fun getTemp():String {
+         //get city temperature
          return  this.temperature!!
      }
      fun setTemp(mValue :String){
+         //set city temperature
          this.temperature = mValue
      }
-
 }

@@ -12,10 +12,10 @@ public class CurrentData {
     public City city;
     @Expose
     @SerializedName("list")
-    private java.util.List<List> list;
+    public java.util.List<List> list;
     @Expose
     @SerializedName("cnt")
-    private int cnt;
+    public int cnt;
     @Expose
     @SerializedName("message")
     public double message;
@@ -32,117 +32,117 @@ public class CurrentData {
         public String country;
         @Expose
         @SerializedName("coord")
-        private Coord coord;
+        public Coord coord;
         @Expose
         @SerializedName("name")
-        private String name;
+        public String name;
         @Expose
         @SerializedName("id")
-        private int id;
+        public int id;
     }
 
     public static class Coord {
         @Expose
         @SerializedName("lon")
-        private double lon;
+        public double lon;
         @Expose
         @SerializedName("lat")
-        private double lat;
+        public double lat;
     }
 
     public static class List {
         @Expose
         @SerializedName("dt_txt")
-        private String dt_txt;
+        public String dt_txt;
         @Expose
         @SerializedName("sys")
-        private Sys sys;
+        public Sys sys;
         @Expose
         @SerializedName("rain")
-        private Rain rain;
+        public Rain rain;
         @Expose
         @SerializedName("wind")
-        private Wind wind;
+        public Wind wind;
         @Expose
         @SerializedName("clouds")
-        private Clouds clouds;
+        public Clouds clouds;
         @Expose
         @SerializedName("weather")
-        private java.util.List<Weather> weather;
+        public java.util.List<Weather> weather;
         @Expose
         @SerializedName("main")
-        private Main main;
+        public Main main;
         @Expose
         @SerializedName("dt")
-        private int dt;
+        public int dt;
     }
 
     public static class Sys {
         @Expose
         @SerializedName("pod")
-        private String pod;
+        public String pod;
     }
 
     public static class Rain {
         @Expose
         @SerializedName("3h")
-        private double rain;
+        public double rain;
     }
 
     public static class Wind {
         @Expose
         @SerializedName("deg")
-        private double deg;
+        public double deg;
         @Expose
         @SerializedName("speed")
-        private double speed;
+        public double speed;
     }
 
     public static class Clouds {
         @Expose
         @SerializedName("all")
-        private int all;
+        public int all;
     }
 
     public static class Weather {
         @Expose
         @SerializedName("icon")
-        private String icon;
+        public String icon;
         @Expose
         @SerializedName("description")
-        private String description;
+        public String description;
         @Expose
         @SerializedName("main")
-        private String main;
+        public String main;
         @Expose
         @SerializedName("id")
-        private int id;
+        public int id;
     }
 
     public static class Main {
         @Expose
         @SerializedName("temp_kf")
-        private double temp_kf;
+        public double temp_kf;
         @Expose
         @SerializedName("humidity")
-        private int humidity;
+        public int humidity;
         @Expose
         @SerializedName("grnd_level")
-        private double grnd_level;
+        public double grnd_level;
         @Expose
         @SerializedName("sea_level")
-        private double sea_level;
+        public double sea_level;
         @Expose
         @SerializedName("pressure")
-        private double pressure;
+        public double pressure;
         @Expose
         @SerializedName("temp_max")
-        private double temp_max;
+        public double temp_max;
         @Expose
         @SerializedName("temp_min")
-        private double temp_min;
+        public double temp_min;
         @Expose
         @SerializedName("temp")
-        private double temp;
+        public double temp;
     }
 }
